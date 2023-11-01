@@ -108,7 +108,5 @@ class TabelCategorySeeder extends Seeder
 
         DB::table('categories')->insert($data);
         DB::statement('ALTER SEQUENCE categories_id_seq RESTART WITH 19');
-//         UPDATE categories_id_seq
-// SET "last_value"=0
     }
 }
