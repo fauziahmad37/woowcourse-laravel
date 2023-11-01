@@ -15,11 +15,11 @@ return new class extends Migration
             $table->id();
             $table->timestamps();
             $table->string('first_name');
-            $table->string('last_name');
+            $table->string('last_name')->nullable();
             $table->string('email');
-            $table->string('photo');
-            $table->string('phone');
-            $table->timestamp('last_login_date', $precision = 0);
+            $table->string('photo')->nullable();
+            $table->string('phone')->nullable();
+            $table->timestamp('last_login_date', $precision = 0)->nullable();
         });
     }
 

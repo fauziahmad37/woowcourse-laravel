@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->timestamps();
             $table->string('category_name');
-            $table->integer('parent_category');
+            $table->integer('parent_category')->nullable();
         });
     }
 
